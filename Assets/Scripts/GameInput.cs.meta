@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8e53333801d9131459f65f2237792dc0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pauseButton: {fileID: 8457590721918433939, guid: fda49f8d2bc28ae46864853b85dfb20e,
+      type: 3}
+  - joystick: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

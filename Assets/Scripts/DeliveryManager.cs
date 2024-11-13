@@ -69,50 +69,7 @@ public class DeliveryManager : NetworkBehaviour
         OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
     }
 
-    // public void DeliverRecipe(PlateKitchenObject plateKitchenObject)
-    // {
-    //     for (int i = 0; i < waitingRecipeSOList.Count; i++)
-    //     {
-    //         RecipeSO waitingRecipeSO = waitingRecipeSOList[i];
-
-    //         if (waitingRecipeSO.kitchenObjectSOList.Count == plateKitchenObject.GetKitchenObjectSOList().Count)
-    //         {
-    //             // Has the same number of ingredients
-    //             bool plateContentsMatchesRecipe = true;
-    //             foreach (KitchenObjectSO recipeKitchenObjectSO in waitingRecipeSO.kitchenObjectSOList)
-    //             {
-    //                 // Cycling through all ingredients in the Recipe
-    //                 bool ingredientFound = false;
-    //                 foreach (KitchenObjectSO plateKitchenObjectSO in plateKitchenObject.GetKitchenObjectSOList())
-    //                 {
-    //                     // Cycling through all ingredients in the Plate
-    //                     if (plateKitchenObjectSO == recipeKitchenObjectSO)
-    //                     {
-    //                         // Ingredient matches!
-    //                         ingredientFound = true;
-    //                         break;
-    //                     }
-    //                 }
-    //                 if (!ingredientFound)
-    //                 {
-    //                     // This Recipe ingredient was not found on the Plate
-    //                     plateContentsMatchesRecipe = false;
-    //                 }
-    //             }
-
-    //             if (plateContentsMatchesRecipe)
-    //             {
-    //                 // Player delivered the correct recipe!
-    //                 DeliverCorrectRecipeServerRpc(i);
-    //                 return;
-    //             }
-    //         }
-    //     }
-
-    //     // No matches found!
-    //     // Player did not deliver a correct recipe
-    //     DeliverIncorrectRecipeServerRpc();
-    // }
+  
     public void DeliverRecipe(ulong playerId, PlateKitchenObject plateKitchenObject)
     {
         for (int i = 0; i < waitingRecipeSOList.Count; i++)
